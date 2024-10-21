@@ -1,10 +1,8 @@
 name: Windows - LiteManager
 
-
 on:
 
   workflow_dispatch:
-
 
 jobs:
 
@@ -17,10 +15,9 @@ jobs:
     timeout-minutes: 9999
 
     
-
     steps:
 
-      - name: Downloading & Installing Essentials
+       name: Downloading & Installing Essentials
 
         run: |
 
@@ -28,9 +25,8 @@ jobs:
 
           cmd /c Downloads.bat
 
+  name: Connect to LiteManager
 
-      - name: Connect to LiteManager
-
-      - name: Time Counter
+       name: Time Counter
 
         run: cmd /c loop.bat
